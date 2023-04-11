@@ -29,14 +29,15 @@
                 <option value="audi">Audi</option>
             </select>
         </form>
-        <h2>Choose your preferred parking:</h2>
+        <h2>Choose your preferred parking(Shade/No Shade):</h2>
 
         <form>
         <input type="radio" id="shade" name="parking" value="Shade">
-        <label for="shade">SHADE</label><br>
+        <label for="shade">Yes</label><br>
         <input type="radio" id="noShade" name="parking" value="NoShade">
-        <label for="noShade">NO SHADE</label><br>
+        <label for="noShade">No</label><br>
         
         </form>
+        <button type="submit" onclick="getFormValues()">submit</button>
     </main>
 </body>
