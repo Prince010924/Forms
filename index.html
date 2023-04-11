@@ -13,7 +13,7 @@
         <header class="header">
             <h1>Parking registration</h1>
         </header>
-        <form>
+        <form onsubmit="return false;">
             <label for="fname">First name:</label><br>
             <input type="text" id="fname" name="fname"><br>
             <label for="lname">Last name:</label><br>
@@ -29,15 +29,12 @@
                 <option value="audi">Audi</option>
             </select>
         </form>
-        <h2>Choose your preferred parking(Shade/No Shade):</h2>
 
-        <form>
-        <input type="radio" id="shade" name="parking" value="Shade">
-        <label for="shade">Yes</label><br>
-        <input type="radio" id="noShade" name="parking" value="NoShade">
-        <label for="noShade">No</label><br>
-        
-        </form>
-        <button type="submit" onclick="getFormValues()">submit</button>
+        <label for="shade">Do you want a shaded parking?</label>
+            <select id="shade" name="shade">
+                <option value="Shade">Yes</option>
+                <option value="noShade">No</option>
+            </select>
+        <br><button type="submit" onclick="getFormValues()">submit</button>
     </main>
 </body>
