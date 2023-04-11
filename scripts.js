@@ -1,9 +1,9 @@
 function getFormValues(){
-    let firstName = document.getElementById("fname");
-    let lastName = document.getElementById("lname");
-    let licensePlate = document.getElementById("number plate");
-    let carName = document.getElementById("cars");
-    let Shade = document.getElementById("shade");
+    let firstName = document.getElementById("fname").value;
+    let lastName = document.getElementById("lname").value;
+    let licensePlate = document.getElementById("numberplate").value;
+    let carName = document.getElementById("cars").value;
+    let Shade = document.getElementById("shade").value;
    console.log(`
         first name: ${firstName}\n
         last name: ${lastName} \n
